@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fa-ir" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rayvo</title>
+    <meta
+      name="description"
+      content="Rayvo — نمونه‌کارهای فرانت‌اند رایبد اکبرلو با دموی آنلاین."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=Fira+Code:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/jpeg" href="logo.jpg" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <!-- ============ Sidebar (desktop) ============ -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+          <div class="brand">
+            <img src="logo.jpg" alt="Rayvo logo" class="brand-mark-img" />
+            <span class="brand-name font-en">Rayvo</span>
+          </div>
+          <button class="theme-toggle-btn" data-toggle-theme aria-label="تغییر پوسته روشن و تاریک">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a href="#" class="nav-item active" data-section="projects">
+            <i class="fa-solid fa-code"></i>
+            پروژه‌ها
+          </a>
+          <a href="#" class="nav-item" data-section="about">
+            <i class="fa-solid fa-user"></i>
+            درباره ما
+          </a>
+          <a href="#" class="nav-item" data-section="contact">
+            <i class="fa-solid fa-phone"></i>
+            ارتباط با ما
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a
+            class="sidebar-link"
+            href="https://github.com/raybod179"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-github"></i>
+            پروفایل گیت‌هاب
+          </a>
+          <a
+            class="sidebar-link"
+            href="https://raybodak-portfolio.vercel.app/"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-solid fa-briefcase"></i>
+            نمونه‌کار شخصی
+          </a>
+          <div class="sidebar-credit font-en">Raybod Akbarlou</div>
+        </div>
+      </aside>
+
+      <!-- ============ Main ============ -->
+      <div style="flex:1; min-width:0; display:flex; flex-direction:column;">
+        <!-- Mobile topbar -->
+        <div class="mobile-topbar">
+          <div class="brand">
+            <img src="logo.jpg" alt="Rayvo logo" class="brand-mark-img" />
+            <span class="brand-name font-en">Rayvo</span>
+          </div>
+          <button class="theme-toggle-btn" data-toggle-theme aria-label="تغییر پوسته روشن و تاریک">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
+
+        <main class="main-content">
+          <!-- ================= Projects Section ================= -->
+          <section class="page-section" id="section-projects">
+            <div class="page-header">
+              <div class="title-bar"></div>
+              <h1 class="page-title">پروژه های فرانت اند و طراحی سایت</h1>
+            </div>
+            <p class="page-subtitle">برای هر پروژه، دمو آنلاین در دسترس شماست.</p>
+
+            <div class="filters">
+              <button class="filter-btn active" data-category="all">
+                <i class="fa-solid fa-code"></i>
+                همه
+              </button>
+              <button class="filter-btn" data-category="html-css">
+                <i class="fa-solid fa-code"></i>
+                <span class="font-en">HTML &amp; CSS</span>
+              </button>
+              <button class="filter-btn" data-category="javascript">
+                <i class="fa-solid fa-code"></i>
+                <span class="font-en">JavaScript</span>
+              </button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid" style="display:none;"></div>
+
+            <div class="projects-grid" id="skeletonContainer">
+              <div class="skeleton-card">
+                <div class="skel-block" style="height:190px;"></div>
+                <div style="padding:1.15rem;">
+                  <div class="skel-block" style="height:1rem; width:55%; margin:0 auto 0.7rem;"></div>
+                  <div class="skel-block" style="height:0.8rem; width:85%; margin:0 auto 0.9rem;"></div>
+                  <div class="skel-block" style="height:2.3rem; border-radius:10px;"></div>
+                </div>
+              </div>
+              <div class="skeleton-card">
+                <div class="skel-block" style="height:190px;"></div>
+                <div style="padding:1.15rem;">
+                  <div class="skel-block" style="height:1rem; width:55%; margin:0 auto 0.7rem;"></div>
+                  <div class="skel-block" style="height:0.8rem; width:85%; margin:0 auto 0.9rem;"></div>
+                  <div class="skel-block" style="height:2.3rem; border-radius:10px;"></div>
+                </div>
+              </div>
+              <div class="skeleton-card">
+                <div class="skel-block" style="height:190px;"></div>
+                <div style="padding:1.15rem;">
+                  <div class="skel-block" style="height:1rem; width:55%; margin:0 auto 0.7rem;"></div>
+                  <div class="skel-block" style="height:0.8rem; width:85%; margin:0 auto 0.9rem;"></div>
+                  <div class="skel-block" style="height:2.3rem; border-radius:10px;"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ================= About Section ================= -->
+          <section class="page-section" id="section-about">
+            <div class="page-header">
+              <div class="title-bar"></div>
+              <h1 class="page-title">درباره ما</h1>
+            </div>
+            <p class="page-subtitle">آشنایی با Rayvo</p>
+
+            <div class="section-block">
+              <p>
+                Rayvo از سال ۱۴۰۱ با هدف ساخت محصولات دیجیتال اصولی، کاربردی و
+                باکیفیت آغاز به کار کرده است. ما باور داریم که ساخت یک محصول
+                موفق فقط به ظاهر زیبا محدود نمی‌شود؛ بلکه پایه اصلی آن منطق
+                درست، معماری مناسب و توجه به جزئیات است.
+              </p>
+              <p>
+                در Rayvo تمرکز ما بر طراحی و توسعه پروژه‌هایی است که با فکر،
+                برنامه‌ریزی و اصول مهندسی ساخته می‌شوند. هر ایده را قبل از
+                اجرا بررسی می‌کنیم و تلاش می‌کنیم نتیجه‌ای ایجاد کنیم که علاوه
+                بر زیبایی، عملکرد واقعی و تجربه کاربری خوبی داشته باشد.
+              </p>
+              <p>
+                ما با ساخت پروژه‌هایی در زمینه ابزارهای دیجیتال، نرم‌افزارهای
+                کاربردی و تجربه‌های مدرن وب، مسیر خود را برای یادگیری، رشد و
+                ایجاد محصولات بهتر ادامه می‌دهیم.
+              </p>
+              <p>
+                ماموریت Rayvo این است که با ترکیب منطق، خلاقیت و فناوری،
+                محصولاتی بسازد که ساده، قدرتمند و قابل اعتماد باشند. 🚀
+              </p>
+            </div>
+          </section>
+
+          <!-- ================= Contact Section ================= -->
+          <section class="page-section" id="section-contact">
+            <div class="page-header">
+              <div class="title-bar"></div>
+              <h1 class="page-title">ارتباط با ما</h1>
+            </div>
+            <p class="page-subtitle">از این راه‌ها می‌توانید با ما در ارتباط باشید.</p>
+
+            <div class="contact-links">
+              <a
+                class="contact-card contact-telegram"
+                href="https://t.me/RaybodAKPortfolio"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="contact-icon"><i class="fa-brands fa-telegram"></i></span>
+                <span class="contact-text">
+                  <span class="contact-label">تلگرام</span>
+                  <span class="contact-sub font-en">t.me/RaybodAKPortfolio</span>
+                </span>
+              </a>
+
+              <a
+                class="contact-card contact-resume"
+                href="https://raybodak.vercel.app/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="contact-icon"><i class="fa-solid fa-file-lines"></i></span>
+                <span class="contact-text">
+                  <span class="contact-label">رزومه</span>
+                  <span class="contact-sub font-en">raybodak.vercel.app</span>
+                </span>
+              </a>
+
+              <a
+                class="contact-card contact-github"
+                href="https://github.com/raybod179"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+                <span class="contact-text">
+                  <span class="contact-label">گیت‌هاب</span>
+                  <span class="contact-sub font-en">github.com/raybod179</span>
+                </span>
+              </a>
+            </div>
+          </section>
+
+          <footer class="site-footer font-en">
+            © <span id="year"></span> Rayvo — Built by Raybod Akbarlou
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <!-- ============ Bottom nav (mobile only) ============ -->
+    <nav class="bottom-nav" id="bottomNav">
+      <a href="#" class="bottom-nav-item active" data-section="projects">
+        <i class="fa-solid fa-code"></i>
+        <span>پروژه‌ها</span>
+      </a>
+      <a href="#" class="bottom-nav-item" data-section="about">
+        <i class="fa-solid fa-user"></i>
+        <span>درباره ما</span>
+      </a>
+      <a href="#" class="bottom-nav-item" data-section="contact">
+        <i class="fa-solid fa-phone"></i>
+        <span>ارتباط با ما</span>
+      </a>
+    </nav>
+
+    <script src="script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
