@@ -1,0 +1,274 @@
+/* =============================================================================
+   Rayvo — Tailwind entry point
+   Build (no npm needed — standalone Tailwind CLI 3.4.19, run from the project root):
+     tailwindcss -c tailwind/tailwind.config.js -i tailwind/input.css -o assets/css/tailwind.css --minify
+   ========================================================================== */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -----------------------------------------------------------------------------
+   1. Base — design tokens, theme, element defaults
+   -------------------------------------------------------------------------- */
+@layer base {
+  :root {
+    --bg-page: #0a0e17;
+    --bg-sidebar: #10141f;
+    --bg-card: #131826;
+    --bg-elevated: #1a2030;
+    --border: #212739;
+    --text-primary: #f5f7fa;
+    --text-secondary: #8b93a7;
+    --text-muted: #5b6478;
+
+    --accent-blue: #3b82f6;
+    --accent-blue-dark: #2563eb;
+
+    --badge-amber-bg: #3a2c10;
+    --badge-amber-text: #f2b705;
+    --badge-green-bg: #0f3323;
+    --badge-green-text: #34d399;
+
+    --sidebar-width: 272px;
+    --bottom-nav-height: 66px;
+  }
+
+  /* Light theme — toggled via <html data-theme="light"> */
+  :root[data-theme='light'] {
+    --bg-page: #f3f5fa;
+    --bg-sidebar: #ffffff;
+    --bg-card: #ffffff;
+    --bg-elevated: #eef1f7;
+    --border: #e3e7f0;
+    --text-primary: #171c2b;
+    --text-secondary: #5b6478;
+    --text-muted: #8b93a7;
+
+    --badge-amber-bg: #fdf1cf;
+    --badge-amber-text: #a2720a;
+    --badge-green-bg: #d9f7e8;
+    --badge-green-text: #0f9d63;
+  }
+
+  html {
+    /* Vazirmatn's native line spacing reads better than Tailwind's 1.5 */
+    line-height: normal;
+  }
+
+  html,
+  body {
+    @apply bg-page text-ink;
+  }
+
+  body {
+    direction: rtl;
+    @apply transition-colors;
+  }
+
+  /* Utilities such as `.grid` would otherwise override the [hidden] attribute */
+  [hidden]:not([hidden='until-found']) {
+    display: none !important;
+  }
+
+  :where(a, button):focus-visible {
+    outline: 2px solid var(--accent-blue);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+/* -----------------------------------------------------------------------------
+   2. Components — small, reusable widgets built from Tailwind utilities
+   -------------------------------------------------------------------------- */
+@layer components {
+  /* ---- Icons: inline SVG sprite (see <svg> at the top of <body> in index.html) ---- */
+  .icon {
+    @apply inline-block size-[1em] shrink-0 fill-current align-[-0.125em];
+  }
+
+  /* ---- Brand + theme toggle ---- */
+  .brand {
+    @apply flex items-center gap-[0.6rem];
+  }
+  .brand-mark {
+    @apply size-9 shrink-0 rounded-[9px] bg-[#05070c] object-cover;
+  }
+  .brand-name {
+    @apply text-[1.15rem] font-extrabold tracking-[0.3px];
+  }
+  .theme-toggle {
+    @apply flex size-[38px] shrink-0 items-center justify-center rounded-[10px] border border-line bg-elevated
+      transition-all duration-200 hover:-translate-y-px hover:border-brand;
+  }
+  .theme-toggle .icon {
+    @apply size-4 text-[#f2b705];
+  }
+
+  /* ---- Navigation (sidebar + mobile bottom bar) ---- */
+  .nav-item {
+    @apply flex items-center gap-[0.7rem] rounded-[10px] px-[0.9rem] py-[0.8rem] text-[0.95rem] font-medium text-ink-soft
+      transition-all duration-200 hover:bg-elevated hover:text-ink;
+  }
+  .nav-item .icon {
+    @apply h-[0.9rem] w-[18px];
+  }
+  .nav-item[aria-current='page'] {
+    @apply bg-gradient-to-r from-brand-dark to-brand text-white shadow-[0_4px_14px_rgba(59,130,246,0.35)];
+  }
+  .sidebar-link {
+    @apply flex items-center gap-[0.7rem] rounded-[10px] border border-line bg-elevated px-[0.9rem] py-3 text-[0.85rem] text-ink-soft
+      transition-all duration-200 hover:border-brand hover:text-ink;
+  }
+  .sidebar-link .icon {
+    @apply text-brand;
+  }
+  .bottom-nav-item {
+    @apply flex flex-1 flex-col items-center justify-center gap-1 text-[0.7rem] font-medium text-ink-soft transition-colors duration-200;
+  }
+  .bottom-nav-item .icon {
+    @apply size-[1.15rem];
+  }
+  .bottom-nav-item[aria-current='page'] {
+    @apply text-brand;
+  }
+
+  /* ---- Page header ---- */
+  .title-bar {
+    @apply w-1 shrink-0 animate-rgb-cycle self-stretch rounded bg-[#6366f1] shadow-[0_0_12px_currentColor];
+  }
+  .page-title {
+    @apply my-[0.67em] text-[length:clamp(1.35rem,1.4vw+1rem,1.85rem)] font-extrabold;
+  }
+  .page-subtitle {
+    @apply ml-[1.4rem] text-[0.95rem] text-ink-soft;
+  }
+
+  /* ---- Filters ---- */
+  .filter-btn {
+    @apply flex items-center gap-2 rounded-full border border-line bg-card px-[1.15rem] py-[0.6rem] text-[0.88rem] text-ink-soft
+      transition-all duration-200 hover:border-brand hover:text-ink;
+  }
+  .filter-btn .icon {
+    @apply size-[0.78rem];
+  }
+  .filter-btn[aria-pressed='true'] {
+    @apply border-brand bg-brand font-semibold text-white;
+  }
+
+  /* ---- Project card ---- */
+  .project-card {
+    @apply flex flex-col overflow-hidden rounded-2xl border border-line bg-card
+      transition-[transform,border-color,box-shadow,background-color]
+      hover:-translate-y-[5px] hover:border-brand hover:shadow-[0_12px_28px_rgba(0,0,0,0.35)];
+  }
+  .project-thumb {
+    @apply relative flex h-[190px] w-full items-center justify-center overflow-hidden
+      after:absolute after:inset-0 after:z-[1]
+      after:bg-[linear-gradient(180deg,rgba(0,0,0,0)_55%,rgba(10,14,23,0.35)_100%)];
+  }
+  .project-thumb-img {
+    @apply absolute inset-0 z-0 size-full object-cover object-top;
+  }
+  /* Icon shown only when the screenshot is missing (see assets/js/app.js) */
+  .project-thumb .project-thumb-icon {
+    @apply relative z-[1] hidden size-12 text-white/[0.92] drop-shadow-[0_4px_10px_rgba(0,0,0,0.25)];
+  }
+  .project-thumb.thumb-fallback .project-thumb-icon {
+    @apply block;
+  }
+  .project-body {
+    @apply flex flex-1 flex-col px-[1.2rem] pb-[1.3rem] pt-[1.15rem] text-center;
+  }
+  .project-title {
+    @apply mb-[0.4rem] mt-[1em] text-[1.05rem] font-bold;
+  }
+  .project-desc {
+    @apply mb-4 mt-[1em] text-[0.87rem] leading-[1.7] text-ink-soft;
+  }
+  .project-meta {
+    @apply mb-[1.1rem] flex min-h-[26px] items-center justify-between;
+  }
+  .tech-tags {
+    @apply flex flex-wrap gap-[0.4rem];
+  }
+  .tech-tag {
+    @apply rounded-md border border-line bg-elevated px-[0.55rem] py-[0.28rem] text-[0.7rem] font-semibold text-ink-soft;
+  }
+  .level-badge {
+    @apply inline-flex items-center gap-[0.4rem] rounded-full px-[0.7rem] py-[0.32rem] text-[0.75rem] font-semibold;
+  }
+  .level-dot {
+    @apply size-[7px] rounded-full bg-current;
+  }
+  .project-actions {
+    @apply mt-auto flex gap-[0.6rem];
+  }
+  .btn-demo,
+  .btn-alt {
+    @apply flex-1 rounded-[10px] px-2 py-3 text-center text-[0.85rem] transition-all duration-200;
+  }
+  .btn-demo {
+    @apply bg-brand font-bold text-white hover:bg-brand-dark;
+  }
+  .btn-alt {
+    @apply border border-line bg-transparent font-semibold text-ink-soft hover:border-brand hover:text-ink;
+  }
+  .empty-state {
+    @apply rounded-2xl border border-dashed border-line px-4 py-12 text-center text-ink-muted;
+  }
+
+  /* ---- About / generic text block ---- */
+  .section-block {
+    @apply mt-[1.4rem] rounded-2xl border border-line bg-card p-[1.8rem] leading-[2] text-ink-soft;
+  }
+  .section-block p {
+    @apply my-[1em];
+  }
+
+  /* ---- Contact ---- */
+  .contact-card {
+    @apply flex items-center gap-[0.9rem] rounded-2xl border border-line bg-card px-[1.2rem] py-[1.1rem] transition-all
+      hover:-translate-y-1 hover:shadow-[0_12px_26px_rgba(0,0,0,0.35)];
+  }
+  .contact-icon {
+    @apply flex size-[46px] shrink-0 items-center justify-center rounded-xl text-white;
+  }
+  .contact-icon .icon {
+    @apply size-[1.3rem];
+  }
+  .contact-text {
+    @apply flex flex-col gap-[0.2rem];
+  }
+  .contact-label {
+    @apply text-[0.98rem] font-bold text-ink;
+  }
+  .contact-sub {
+    @apply text-[0.78rem] text-ink-soft;
+  }
+
+  /* ---- Footer ---- */
+  .site-footer {
+    @apply mt-14 border-t border-line pt-[1.4rem] text-center text-[0.8rem] text-ink-muted;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+   3. Utilities
+   -------------------------------------------------------------------------- */
+@layer utilities {
+  /* Latin/technical text inside RTL content (URLs, code, brand name) */
+  .font-en {
+    direction: ltr;
+    unicode-bidi: isolate;
+    @apply font-mono;
+  }
+}

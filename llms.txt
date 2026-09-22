@@ -1,0 +1,33 @@
+# Rayvo
+
+> Rayvo (رایوو) is the official website and brand of Raybod Akbarlou (رایبد اکبرلو), a web developer and designer focused on front-end projects with HTML, CSS, JavaScript and Laravel. Active since 2022 (1401 in the Persian calendar).
+
+Raybod Akbarlou is also written as "رایبد اکبرلو" or "Raybod AK". The brand is written "Rayvo", "rayvo" or "رایوو".
+
+## Main page
+- [Rayvo — projects, about, contact](https://rayvo.vercel.app/): single-page site; sections are /#projects, /#about, /#contact
+
+## Projects (live demos)
+- [AK Planner](https://raybod179-oss.github.io/AK-Planner/): یک ابزار مدیریت برنامه‌ریزی شخصی با رابط کاربری مدرن.
+- [AK Spend](https://raybod179-oss.github.io/AK-Spend/): اپلیکیشن مدیریت هزینه و مالی شخصی با طراحی داشبوردی و ریسپانسیو.
+- [AK Notes](https://raybod179-oss.github.io/AK-Notes/): ابزار یادداشت‌برداری سریع و ساده برای ثبت ایده‌ها.
+- [AK Kanban](https://raybod179-oss.github.io/AK-Kanbal/): برد کانبان برای مدیریت وظایف و پیگیری پروژه‌ها.
+- [AK Analytics Dashboard](https://raybod179-oss.github.io/AK-Analytics-Dashboard/): داشبورد تحلیلی برای نمایش داده‌ها و آمار به‌صورت بصری.
+- [TaurusTrade](https://raybod179-oss.github.io/TaurusTrade/): پلتفرم نمایشی برای معاملات و بازار مالی.
+- [Raybod Akbarlou Portfolio](https://raybodak-portfolio.vercel.app/): نمونه‌کار شخصی رایبد اکبرلو با طراحی مدرن.
+  - [GitHub Pages mirror](https://raybod179-oss.github.io/Raybod-Akbarlou-Portfolio-/)
+- [AK AI Workspace — AI Chat](https://raybod179-oss.github.io/AK-AI-Workspase-AI--Chat/): فضای کاری هوش مصنوعی با قابلیت گفتگوی هوشمند.
+- [Qelvexa](https://qelvexa.vercel.app/): پروژه نمایشی Qelvexa با طراحی مدرن.
+  - [Mirror](https://raybod179-oss.github.io/Qelvexa/)
+
+## More
+- [Full site content in one file](https://rayvo.vercel.app/llms-full.txt)
+
+## Official profiles
+- [GitHub (personal)](https://github.com/raybod179)
+- [GitHub (Rayvo project)](https://github.com/raybod179-oss/Rayvo)
+- [Telegram](https://t.me/Rayvoak)
+- [YouTube](https://www.youtube.com/@raybod-akbarlou-Rayvo)
+- [Bale](https://ble.ir/rayvo)
+- [Aparat](https://www.aparat.com/Rayvo)
+- [Resume](https://raybodak.vercel.app/)

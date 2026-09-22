@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="fa-ir" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta name="author" content="Raybod Akbarlou" />
+    <meta name="theme-color" content="#0a0e17" />
+    <meta name="google-site-verification" content="TCBOVamqbZAnU4rE4a7-qFZ5lnNchk9OCdgxbhcZMUU" />
+    <meta name="google-site-verification" content="RnNxSynGkqbZttEz3qZgmqcuRz6Z2WB9FVSdHI-P9tY" />
+    <meta name="google-site-verification" content="_VOBvBdbE7ABhDpnq6AA2-xROh_60BNhu_OoKfqA_jM" />
+
+    <title>Rayvo</title>
+    <meta
+      name="description"
+      content="Rayvo (رایوو) — وب‌سایت رسمی رایبد اکبرلو (Raybod Akbarlou)، برنامه‌نویس و طراح وب. نمونه‌کارها و پروژه‌های فرانت‌اند با HTML، CSS، JavaScript و Laravel همراه با دمو آنلاین."
+    />
+    <link rel="canonical" href="https://rayvo.vercel.app/" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rayvo" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:title" content="Rayvo" />
+    <meta property="og:description" content="وب‌سایت رسمی رایبد اکبرلو (Raybod Akbarlou) — برنامه‌نویس و توسعه‌دهنده وب." />
+    <meta property="og:url" content="https://rayvo.vercel.app/" />
+    <meta property="og:image" content="https://rayvo.vercel.app/assets/img/logo.jpg" />
+    <meta property="og:image:alt" content="لوگوی Rayvo" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Rayvo" />
+    <meta name="twitter:description" content="وب‌سایت رسمی رایبد اکبرلو، برنامه‌نویس و توسعه‌دهنده وب." />
+    <meta name="twitter:image" content="https://rayvo.vercel.app/assets/img/logo.jpg" />
+
+    <!-- Favicon (PNG only — no .ico) + PWA icons — add these files to the site root (see README → "Favicon") -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="application-name" content="Rayvo" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Rayvo" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+    <!-- Styles: Tailwind CSS build (source: tailwind/input.css). Listed first on purpose. -->
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+    <!-- Fonts (the only third-party request) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=Fira+Code:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Applies the saved theme before first paint (prevents a dark→light flash) -->
+    <script src="assets/js/theme-init.js"></script>
+
+    <!-- Structured data: Person + Organization + WebSite (sameAs = official profiles) -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://rayvo.vercel.app/#person",
+      "name": "Raybod Akbarlou",
+      "alternateName": [
+        "رایبد اکبرلو",
+        "رایبد اکبر لو",
+        "Raybod AK"
+      ],
+      "url": "https://rayvo.vercel.app/",
+      "image": "https://rayvo.vercel.app/assets/img/logo.jpg",
+      "jobTitle": "Web Developer",
+      "description": "Raybod Akbarlou (رایبد اکبرلو) is a web developer and the founder of Rayvo, focused on front-end development with HTML, CSS, JavaScript and Laravel.",
+      "knowsAbout": [
+        "Web development",
+        "Front-end development",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Laravel",
+        "SEO"
+      ],
+      "knowsLanguage": [
+        "fa",
+        "en"
+      ],
+      "worksFor": {
+        "@id": "https://rayvo.vercel.app/#brand"
+      },
+      "sameAs": [
+        "https://github.com/raybod179",
+        "https://github.com/raybod179-oss",
+        "https://t.me/Rayvoak",
+        "https://www.youtube.com/@raybod-akbarlou-Rayvo",
+        "https://ble.ir/rayvo",
+        "https://www.aparat.com/Rayvo",
+        "https://raybodak.vercel.app/",
+        "https://raybodak-portfolio.vercel.app/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://rayvo.vercel.app/#brand",
+      "name": "Rayvo",
+      "alternateName": [
+        "رایوو",
+        "rayvo",
+        "RAYVO"
+      ],
+      "url": "https://rayvo.vercel.app/",
+      "logo": "https://rayvo.vercel.app/assets/img/logo.jpg",
+      "foundingDate": "2022",
+      "founder": {
+        "@id": "https://rayvo.vercel.app/#person"
+      },
+      "sameAs": [
+        "https://github.com/raybod179-oss/Rayvo",
+        "https://t.me/Rayvoak",
+        "https://www.youtube.com/@raybod-akbarlou-Rayvo",
+        "https://ble.ir/rayvo",
+        "https://www.aparat.com/Rayvo"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://rayvo.vercel.app/#website",
+      "url": "https://rayvo.vercel.app/",
+      "name": "Rayvo",
+      "alternateName": [
+        "رایوو",
+        "rayvo"
+      ],
+      "inLanguage": "fa",
+      "publisher": {
+        "@id": "https://rayvo.vercel.app/#brand"
+      }
+    }
+  ]
+}
+    </script>
+  </head>
+
+  <body>
+    <!-- Icon sprite: Font Awesome Free 6 (https://fontawesome.com) — icons licensed CC BY 4.0.
+         Inlined so the page needs no icon font (≈250 KB saved) and no extra request. -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="absolute size-0 overflow-hidden" aria-hidden="true" focusable="false">
+    <symbol id="i-sun" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 640 512"><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></symbol>
+    <symbol id="i-user" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 512 512"><path d="M184 48l144 0c4.4 0 8 3.6 8 8l0 40L176 96l0-40c0-4.4 3.6-8 8-8zm-56 8l0 40L64 96C28.7 96 0 124.7 0 160l0 96 192 0 128 0 192 0 0-96c0-35.3-28.7-64-64-64l-64 0 0-40c0-30.9-25.1-56-56-56L184 0c-30.9 0-56 25.1-56 56zM512 288l-192 0 0 32c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-32L0 288 0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-128z"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 496 512"><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></symbol>
+    <symbol id="i-comment-dots" viewBox="0 0 512 512"><path d="M256 448c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9c-5.5 9.2-11.1 16.6-15.2 21.6c-2.1 2.5-3.7 4.4-4.9 5.7c-.6 .6-1 1.1-1.3 1.4l-.3 .3c0 0 0 0 0 0c0 0 0 0 0 0s0 0 0 0s0 0 0 0c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c28.7 0 57.6-8.9 81.6-19.3c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9zM128 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm128 0a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm96 32a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></symbol>
+    <symbol id="i-circle-play" viewBox="0 0 512 512"><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9l0 176c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></symbol>
+    <symbol id="i-file-lines" viewBox="0 0 384 512"><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-288-128 0c-17.7 0-32-14.3-32-32L224 0 64 0zM256 0l0 128 128 0L256 0zM112 256l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64l160 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-160 0c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></symbol>
+    <symbol id="i-calendar-days" viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32l0 32 128 0 0-32c0-17.7 14.3-32 32-32s32 14.3 32 32l0 32 48 0c26.5 0 48 21.5 48 48l0 48L0 160l0-48C0 85.5 21.5 64 48 64l48 0 0-32c0-17.7 14.3-32 32-32zM0 192l448 0 0 272c0 26.5-21.5 48-48 48L48 512c-26.5 0-48-21.5-48-48L0 192zm64 80l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm128 0l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM64 400l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zm112 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16z"/></symbol>
+    <symbol id="i-wallet" viewBox="0 0 512 512"><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-224c0-35.3-28.7-64-64-64L80 128c-8.8 0-16-7.2-16-16s7.2-16 16-16l368 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L64 32zM416 272a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></symbol>
+    <symbol id="i-note-sticky" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l224 0 0-112c0-26.5 21.5-48 48-48l112 0 0-224c0-35.3-28.7-64-64-64L64 32zM448 352l-45.3 0L336 352c-8.8 0-16 7.2-16 16l0 66.7 0 45.3 32-32 64-64 32-32z"/></symbol>
+    <symbol id="i-table-columns" viewBox="0 0 512 512"><path d="M0 96C0 60.7 28.7 32 64 32l384 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zm64 64l0 256 160 0 0-256L64 160zm384 0l-160 0 0 256 160 0 0-256z"/></symbol>
+    <symbol id="i-chart-line" viewBox="0 0 512 512"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></symbol>
+    <symbol id="i-chart-simple" viewBox="0 0 448 512"><path d="M160 80c0-26.5 21.5-48 48-48l32 0c26.5 0 48 21.5 48 48l0 352c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-352zM0 272c0-26.5 21.5-48 48-48l32 0c26.5 0 48 21.5 48 48l0 160c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48L0 272zM368 96l32 0c26.5 0 48 21.5 48 48l0 288c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48z"/></symbol>
+    <symbol id="i-robot" viewBox="0 0 640 512"><path d="M320 0c17.7 0 32 14.3 32 32l0 64 120 0c39.8 0 72 32.2 72 72l0 272c0 39.8-32.2 72-72 72l-304 0c-39.8 0-72-32.2-72-72l0-272c0-39.8 32.2-72 72-72l120 0 0-64c0-17.7 14.3-32 32-32zM208 384c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zm96 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l32 0c8.8 0 16-7.2 16-16s-7.2-16-16-16l-32 0zM264 256a40 40 0 1 0 -80 0 40 40 0 1 0 80 0zm152 40a40 40 0 1 0 0-80 40 40 0 1 0 0 80zM48 224l16 0 0 192-16 0c-26.5 0-48-21.5-48-48l0-96c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48l0 96c0 26.5-21.5 48-48 48l-16 0 0-192 16 0z"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 512 512"><path d="M116.7 33.8c4.5-6.1 11.7-9.8 19.3-9.8l240 0c7.6 0 14.8 3.6 19.3 9.8l112 152c6.8 9.2 6.1 21.9-1.5 30.4l-232 256c-4.5 5-11 7.9-17.8 7.9s-13.2-2.9-17.8-7.9l-232-256c-7.7-8.5-8.3-21.2-1.5-30.4l112-152zm38.5 39.8c-3.3 2.5-4.2 7-2.1 10.5l57.4 95.6L63.3 192c-4.1 .3-7.3 3.8-7.3 8s3.2 7.6 7.3 8l192 16c.4 0 .9 0 1.3 0l192-16c4.1-.3 7.3-3.8 7.3-8s-3.2-7.6-7.3-8L301.5 179.8l57.4-95.6c2.1-3.5 1.2-8.1-2.1-10.5s-7.9-2-10.7 1L256 172.2 165.9 74.6c-2.8-3-7.4-3.4-10.7-1z"/></symbol>
+    </svg>
+
+    <div class="flex min-h-screen">
+      <!-- ============ Sidebar (desktop) ============ -->
+      <aside
+        id="sidebar"
+        class="sticky top-0 z-[100] hidden h-screen w-sidebar shrink-0 flex-col border-l border-line bg-sidebar transition-colors lg:flex"
+      >
+        <div class="flex items-center justify-between border-b border-line px-[1.1rem] py-5">
+          <div class="brand">
+            <img src="assets/img/logo-72.webp" alt="Rayvo logo" class="brand-mark" width="36" height="36" />
+            <span class="brand-name font-en">Rayvo</span>
+          </div>
+          <button type="button" class="theme-toggle" data-toggle-theme aria-label="تغییر پوسته روشن و تاریک">
+            <svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg>
+          </button>
+        </div>
+
+        <nav class="flex flex-col gap-[0.3rem] px-[0.7rem] py-[0.9rem]" aria-label="منوی اصلی">
+          <a href="#projects" class="nav-item" data-section="projects" aria-current="page">
+            <svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg>
+            پروژه‌ها
+          </a>
+          <a href="#about" class="nav-item" data-section="about">
+            <svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg>
+            درباره ما
+          </a>
+          <a href="#contact" class="nav-item" data-section="contact">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+            ارتباط با ما
+          </a>
+        </nav>
+
+        <div class="mt-auto flex flex-col gap-2 border-t border-line px-[0.7rem] pb-[1.2rem] pt-[0.9rem]">
+          <a class="sidebar-link" href="https://github.com/raybod179" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg>
+            پروفایل گیت‌هاب
+          </a>
+          <a class="sidebar-link" href="https://raybodak-portfolio.vercel.app/" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-briefcase"></use></svg>
+            نمونه‌کار شخصی
+          </a>
+          <div class="font-en px-[0.9rem] pt-2 text-center text-[0.72rem] text-ink-muted">Raybod Akbarlou</div>
+        </div>
+      </aside>
+
+      <!-- ============ Main ============ -->
+      <div class="flex min-w-0 flex-1 flex-col">
+        <!-- Mobile top bar -->
+        <div class="sticky top-0 z-[90] flex items-center justify-between border-b border-line bg-sidebar px-[1.1rem] py-4 transition-colors lg:hidden">
+          <div class="brand">
+            <img src="assets/img/logo-72.webp" alt="Rayvo logo" class="brand-mark" width="36" height="36" />
+            <span class="brand-name font-en">Rayvo</span>
+          </div>
+          <button type="button" class="theme-toggle" data-toggle-theme aria-label="تغییر پوسته روشن و تاریک">
+            <svg class="icon" aria-hidden="true"><use href="#i-sun"></use></svg>
+          </button>
+        </div>
+
+        <main class="min-w-0 flex-1 px-[clamp(1.25rem,4vw,3.5rem)] pb-[calc(var(--bottom-nav-height)+2rem)] pt-10 lg:pb-20">
+          <!-- ================= Projects ================= -->
+          <section id="section-projects">
+            <div class="mb-[0.6rem] flex items-center gap-4">
+              <div class="title-bar"></div>
+              <h1 class="page-title">پروژه های فرانت اند و طراحی سایت</h1>
+            </div>
+            <p class="page-subtitle">برای هر پروژه، دمو آنلاین در دسترس شماست.</p>
+
+            <div class="mb-[2.2rem] mt-8 flex flex-wrap gap-[0.6rem]" role="group" aria-label="فیلتر پروژه‌ها" data-filter-group>
+              <button type="button" class="filter-btn" data-category="all" aria-pressed="true">
+                <svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg>
+                همه
+              </button>
+              <button type="button" class="filter-btn" data-category="html-css" aria-pressed="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg>
+                <span class="font-en">HTML &amp; CSS</span>
+              </button>
+              <button type="button" class="filter-btn" data-category="javascript" aria-pressed="false">
+                <svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg>
+                <span class="font-en">JavaScript</span>
+              </button>
+            </div>
+
+            <div id="projectsGrid" class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-[1.6rem]">
+            <article class="project-card" data-category="javascript">
+              <div class="project-thumb bg-thumb-planner">
+                <img class="project-thumb-img" src="assets/img/projects/ak-planner.webp" alt="نمونه‌کار AK Planner" width="960" height="510" loading="eager" fetchpriority="high" decoding="async" />
+                <svg class="project-thumb-icon icon" aria-hidden="true"><use href="#i-calendar-days"></use></svg>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">AK Planner</h3>
+                <p class="project-desc">یک ابزار مدیریت برنامه‌ریزی شخصی با رابط کاربری مدرن.</p>
+                <div class="project-meta">
+                  <div class="tech-tags">
+                    <span class="tech-tag font-en">JavaScript</span>
+                    <span class="tech-tag font-en">CSS</span>
+                    <span class="tech-tag font-en">HTML</span>
+                  </div>
+                  <span class="level-badge bg-badge-amber-bg text-badge-amber-text"><span class="level-dot"></span>متوسط</span>
+                </div>
+                <div class="project-actions">
+                  <a class="btn-demo" href="https://raybod179-oss.github.io/AK-Planner/" target="_blank" rel="noopener">مشاهده دمو</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="javascript">
+              <div class="project-thumb bg-thumb-spend">
+                <img class="project-thumb-img" src="assets/img/projects/ak-spend.webp" alt="نمونه‌کار AK Spend" width="960" height="510" loading="eager" decoding="async" />
+                <svg class="project-thumb-icon icon" aria-hidden="true"><use href="#i-wallet"></use></svg>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">AK Spend</h3>
+                <p class="project-desc">اپلیکیشن مدیریت هزینه و مالی شخصی با طراحی داشبوردی و ریسپانسیو.</p>
+                <div class="project-meta">
+                  <div class="tech-tags">
+                    <span class="tech-tag font-en">JavaScript</span>
+                    <span class="tech-tag font-en">Responsive</span>
+                  </div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn-demo" href="https://raybod179-oss.github.io/AK-Spend/" target="_blank" rel="noopener">مشاهده دمو</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="javascript">
+              <div class="project-thumb bg-thumb-notes">
+                <img class="project-thumb-img" src="assets/img/projects/ak-notes.webp" alt="نمونه‌کار AK Notes" width="960" height="510" loading="lazy" decoding="async" />
+                <svg class="project-thumb-icon icon" aria-hidden="true"><use href="#i-note-sticky"></use></svg>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">AK Notes</h3>
+                <p class="project-desc">ابزار یادداشت‌برداری سریع و ساده برای ثبت ایده‌ها.</p>
+                <div class="project-meta">
+                  <div class="tech-tags"></div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn-demo" href="https://raybod179-oss.github.io/AK-Notes/" target="_blank" rel="noopener">مشاهده دمو</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="javascript">
+              <div class="project-thumb bg-thumb-kanban">
+                <img class="project-thumb-img" src="assets/img/projects/ak-kanban.webp" alt="نمونه‌کار AK Kanban" width="960" height="510" loading="lazy" decoding="async" />
+                <svg class="project-thumb-icon icon" aria-hidden="true"><use href="#i-table-columns"></use></svg>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">AK Kanban</h3>
+                <p class="project-desc">برد کانبان برای مدیریت وظایف و پیگیری پروژه‌ها.</p>
+                <div class="project-meta">
+                  <div class="tech-tags"></div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn-demo" href="https://raybod179-oss.github.io/AK-Kanbal/" target="_blank" rel="noopener">مشاهده دمو</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="javascript">
+              <div class="project-thumb bg-thumb-analytics">
+                <img class="project-thumb-img" src="assets/img/projects/ak-analytics-dashboard.webp" alt="نمونه‌کار AK Analytics Dashboard" width="960" height="510" loading="lazy" decoding="async" />
+                <svg class="project-thumb-icon icon" aria-hidden="true"><use href="#i-chart-line"></use></svg>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">AK Analytics Dashboard</h3>
+                <p class="project-desc">داشبورد تحلیلی برای نمایش داده‌ها و آمار به‌صورت بصری.</p>
+                <div class="project-meta">
+                  <div class="tech-tags"></div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn-demo" href="https://raybod179-oss.github.io/AK-Analytics-Dashboard/" target="_blank" rel="noopener">مشاهده دمو</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="javascript">
+              <div class="project-thumb bg-thumb-trade">
+                <img class="project-thumb-img" src="assets/img/projects/taurustrade.webp" alt="نمونه‌کار TaurusTrade" width="960" height="510" loading="lazy" decoding="async" />
+                <svg class="project-thumb-icon icon" aria-hidden="true"><use href="#i-chart-simple"></use></svg>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">TaurusTrade</h3>
+                <p class="project-desc">پلتفرم نمایشی برای معاملات و بازار مالی.</p>
+                <div class="project-meta">
+                  <div class="tech-tags"></div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn-demo" href="https://raybod179-oss.github.io/TaurusTrade/" target="_blank" rel="noopener">مشاهده دمو</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="html-css">
+              <div class="project-thumb bg-thumb-portfolio">
+                <img class="project-thumb-img" src="assets/img/projects/raybod-akbarlou-portfolio.webp" alt="نمونه‌کار Raybod Akbarlou Portfolio" width="960" height="510" loading="lazy" decoding="async" />
+                <svg class="project-thumb-icon icon" aria-hidden="true"><use href="#i-user"></use></svg>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Raybod Akbarlou Portfolio</h3>
+                <p class="project-desc">نمونه‌کار شخصی رایبد اکبرلو با طراحی مدرن.</p>
+                <div class="project-meta">
+                  <div class="tech-tags"></div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn-demo" href="https://raybodak-portfolio.vercel.app/" target="_blank" rel="noopener">مشاهده دمو</a>
+                <a class="btn-alt" href="https://raybod179-oss.github.io/Raybod-Akbarlou-Portfolio-/" target="_blank" rel="noopener">نسخه GitHub Pages</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="javascript">
+              <div class="project-thumb bg-thumb-ai">
+                <img class="project-thumb-img" src="assets/img/projects/ak-ai-workspace.webp" alt="نمونه‌کار AK AI Workspace — AI Chat" width="960" height="510" loading="lazy" decoding="async" />
+                <svg class="project-thumb-icon icon" aria-hidden="true"><use href="#i-robot"></use></svg>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">AK AI Workspace — AI Chat</h3>
+                <p class="project-desc">فضای کاری هوش مصنوعی با قابلیت گفتگوی هوشمند.</p>
+                <div class="project-meta">
+                  <div class="tech-tags"></div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn-demo" href="https://raybod179-oss.github.io/AK-AI-Workspase-AI--Chat/" target="_blank" rel="noopener">مشاهده دمو</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card" data-category="html-css">
+              <div class="project-thumb bg-thumb-qelvexa">
+                <img class="project-thumb-img" src="assets/img/projects/qelvexa.webp" alt="نمونه‌کار Qelvexa" width="960" height="510" loading="lazy" decoding="async" />
+                <svg class="project-thumb-icon icon" aria-hidden="true"><use href="#i-gem"></use></svg>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Qelvexa</h3>
+                <p class="project-desc">پروژه نمایشی Qelvexa با طراحی مدرن.</p>
+                <div class="project-meta">
+                  <div class="tech-tags"></div>
+                </div>
+                <div class="project-actions">
+                  <a class="btn-demo" href="https://qelvexa.vercel.app/" target="_blank" rel="noopener">مشاهده دمو</a>
+                <a class="btn-alt" href="https://raybod179-oss.github.io/Qelvexa/" target="_blank" rel="noopener">نسخه</a>
+                </div>
+              </div>
+            </article>
+
+              <p class="empty-state" data-empty-state hidden>در این دسته هنوز پروژه‌ای ثبت نشده است.</p>
+            </div>
+          </section>
+
+          <!-- ================= About ================= -->
+          <section id="section-about" hidden>
+            <div class="mb-[0.6rem] flex items-center gap-4">
+              <div class="title-bar"></div>
+              <h2 class="page-title">درباره ما</h2>
+            </div>
+            <p class="page-subtitle">آشنایی با Rayvo</p>
+
+            <div class="section-block">
+              <p>
+                Rayvo از سال ۱۴۰۱ با هدف ساخت محصولات دیجیتال اصولی، کاربردی و
+                باکیفیت آغاز به کار کرده است. ما باور داریم که ساخت یک محصول
+                موفق فقط به ظاهر زیبا محدود نمی‌شود؛ بلکه پایه اصلی آن منطق
+                درست، معماری مناسب و توجه به جزئیات است.
+              </p>
+              <p>
+                در Rayvo تمرکز ما بر طراحی و توسعه پروژه‌هایی است که با فکر،
+                برنامه‌ریزی و اصول مهندسی ساخته می‌شوند. هر ایده را قبل از
+                اجرا بررسی می‌کنیم و تلاش می‌کنیم نتیجه‌ای ایجاد کنیم که علاوه
+                بر زیبایی، عملکرد واقعی و تجربه کاربری خوبی داشته باشد.
+              </p>
+              <p>
+                ما با ساخت پروژه‌هایی در زمینه ابزارهای دیجیتال، نرم‌افزارهای
+                کاربردی و تجربه‌های مدرن وب، مسیر خود را برای یادگیری، رشد و
+                ایجاد محصولات بهتر ادامه می‌دهیم.
+              </p>
+              <p>
+                ماموریت Rayvo این است که با ترکیب منطق، خلاقیت و فناوری،
+                محصولاتی بسازد که ساده، قدرتمند و قابل اعتماد باشند. 🚀
+              </p>
+            </div>
+          </section>
+
+          <!-- ================= Contact ================= -->
+          <section id="section-contact" hidden>
+            <div class="mb-[0.6rem] flex items-center gap-4">
+              <div class="title-bar"></div>
+              <h2 class="page-title">ارتباط با ما</h2>
+            </div>
+            <p class="page-subtitle">از این راه‌ها می‌توانید با ما در ارتباط باشید.</p>
+
+            <div class="mt-[1.4rem] grid grid-cols-[repeat(auto-fit,minmax(230px,1fr))] gap-4">
+              <a class="contact-card hover:border-social-telegram" href="https://t.me/Rayvoak" target="_blank" rel="me noopener">
+                <span class="contact-icon bg-social-telegram"><svg class="icon" aria-hidden="true"><use href="#i-telegram"></use></svg></span>
+                <span class="contact-text">
+                  <span class="contact-label">تلگرام</span>
+                  <span class="contact-sub font-en">t.me/Rayvoak</span>
+                </span>
+              </a>
+
+              <a class="contact-card hover:border-social-youtube" href="https://www.youtube.com/@raybod-akbarlou-Rayvo" target="_blank" rel="me noopener">
+                <span class="contact-icon bg-social-youtube"><svg class="icon" aria-hidden="true"><use href="#i-youtube"></use></svg></span>
+                <span class="contact-text">
+                  <span class="contact-label">یوتیوب</span>
+                  <span class="contact-sub font-en">@raybod-akbarlou-Rayvo</span>
+                </span>
+              </a>
+
+              <a class="contact-card hover:border-social-bale" href="https://ble.ir/rayvo" target="_blank" rel="me noopener">
+                <span class="contact-icon bg-social-bale"><svg class="icon" aria-hidden="true"><use href="#i-comment-dots"></use></svg></span>
+                <span class="contact-text">
+                  <span class="contact-label">بله</span>
+                  <span class="contact-sub font-en">ble.ir/rayvo</span>
+                </span>
+              </a>
+
+              <a class="contact-card hover:border-social-aparat" href="https://www.aparat.com/Rayvo" target="_blank" rel="me noopener">
+                <span class="contact-icon bg-social-aparat"><svg class="icon" aria-hidden="true"><use href="#i-circle-play"></use></svg></span>
+                <span class="contact-text">
+                  <span class="contact-label">آپارات</span>
+                  <span class="contact-sub font-en">aparat.com/Rayvo</span>
+                </span>
+              </a>
+
+              <a class="contact-card hover:border-brand" href="https://raybodak.vercel.app/" target="_blank" rel="noopener">
+                <span class="contact-icon bg-social-resume"><svg class="icon" aria-hidden="true"><use href="#i-file-lines"></use></svg></span>
+                <span class="contact-text">
+                  <span class="contact-label">رزومه</span>
+                  <span class="contact-sub font-en">raybodak.vercel.app</span>
+                </span>
+              </a>
+
+              <a class="contact-card hover:border-social-github" href="https://github.com/raybod179" target="_blank" rel="noopener">
+                <span class="contact-icon bg-social-github"><svg class="icon" aria-hidden="true"><use href="#i-github"></use></svg></span>
+                <span class="contact-text">
+                  <span class="contact-label">گیت‌هاب</span>
+                  <span class="contact-sub font-en">github.com/raybod179</span>
+                </span>
+              </a>
+            </div>
+          </section>
+
+          <footer class="site-footer font-en">
+            © <span id="year"></span> Rayvo — Built by Raybod Akbarlou
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <!-- ============ Bottom nav (mobile only) ============ -->
+    <nav
+      id="bottomNav"
+      class="fixed inset-x-0 bottom-0 z-[95] flex h-bottom-nav items-stretch justify-around border-t border-line bg-sidebar pb-[env(safe-area-inset-bottom,0)] lg:hidden"
+      aria-label="منوی موبایل"
+    >
+      <a href="#projects" class="bottom-nav-item" data-section="projects" aria-current="page">
+        <svg class="icon" aria-hidden="true"><use href="#i-code"></use></svg>
+        <span>پروژه‌ها</span>
+      </a>
+      <a href="#about" class="bottom-nav-item" data-section="about">
+        <svg class="icon" aria-hidden="true"><use href="#i-user"></use></svg>
+        <span>درباره ما</span>
+      </a>
+      <a href="#contact" class="bottom-nav-item" data-section="contact">
+        <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+        <span>ارتباط با ما</span>
+      </a>
+    </nav>
+
+    <script src="assets/js/app.js" defer></script>
+  </body>
+</html>

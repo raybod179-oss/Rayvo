@@ -1,0 +1,7 @@
+/* Loaded only when JavaScript is disabled (<noscript> in index.html):
+   every card is already in the HTML, so the only fix needed is showing the
+   sections that JS would otherwise keep hidden, and hiding controls that do
+   nothing without JS (theme toggle, filters — filtering needs a click handler). */
+section[hidden][id] { display: block !important; }
+[data-toggle-theme],
+[data-filter-group] { display: none; }

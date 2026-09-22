@@ -1,0 +1,68 @@
+# Rayvo — full content
+
+> Rayvo (رایوو) is the official website and brand of Raybod Akbarlou (رایبد اکبرلو), a web developer and designer. Website: https://rayvo.vercel.app/
+
+Names: Rayvo / rayvo / رایوو (brand); Raybod Akbarlou / رایبد اکبرلو / Raybod AK (person, founder of Rayvo).
+
+## About Rayvo (درباره ما)
+
+Rayvo از سال ۱۴۰۱ با هدف ساخت محصولات دیجیتال اصولی، کاربردی و باکیفیت آغاز به کار کرده است. ما باور داریم که ساخت یک محصول موفق فقط به ظاهر زیبا محدود نمی‌شود؛ بلکه پایه اصلی آن منطق درست، معماری مناسب و توجه به جزئیات است.
+
+در Rayvo تمرکز ما بر طراحی و توسعه پروژه‌هایی است که با فکر، برنامه‌ریزی و اصول مهندسی ساخته می‌شوند. هر ایده را قبل از اجرا بررسی می‌کنیم و تلاش می‌کنیم نتیجه‌ای ایجاد کنیم که علاوه بر زیبایی، عملکرد واقعی و تجربه کاربری خوبی داشته باشد.
+
+ما با ساخت پروژه‌هایی در زمینه ابزارهای دیجیتال، نرم‌افزارهای کاربردی و تجربه‌های مدرن وب، مسیر خود را برای یادگیری، رشد و ایجاد محصولات بهتر ادامه می‌دهیم.
+
+ماموریت Rayvo این است که با ترکیب منطق، خلاقیت و فناوری، محصولاتی بسازد که ساده، قدرتمند و قابل اعتماد باشند.
+
+## Projects (پروژه‌های فرانت‌اند و طراحی سایت)
+
+Each project has an online demo.
+
+### AK Planner
+یک ابزار مدیریت برنامه‌ریزی شخصی با رابط کاربری مدرن.
+Tech: JavaScript, CSS, HTML
+Demo: https://raybod179-oss.github.io/AK-Planner/
+
+### AK Spend
+اپلیکیشن مدیریت هزینه و مالی شخصی با طراحی داشبوردی و ریسپانسیو.
+Tech: JavaScript, Responsive
+Demo: https://raybod179-oss.github.io/AK-Spend/
+
+### AK Notes
+ابزار یادداشت‌برداری سریع و ساده برای ثبت ایده‌ها.
+Demo: https://raybod179-oss.github.io/AK-Notes/
+
+### AK Kanban
+برد کانبان برای مدیریت وظایف و پیگیری پروژه‌ها.
+Demo: https://raybod179-oss.github.io/AK-Kanbal/
+
+### AK Analytics Dashboard
+داشبورد تحلیلی برای نمایش داده‌ها و آمار به‌صورت بصری.
+Demo: https://raybod179-oss.github.io/AK-Analytics-Dashboard/
+
+### TaurusTrade
+پلتفرم نمایشی برای معاملات و بازار مالی.
+Demo: https://raybod179-oss.github.io/TaurusTrade/
+
+### Raybod Akbarlou Portfolio
+نمونه‌کار شخصی رایبد اکبرلو با طراحی مدرن.
+Demo: https://raybodak-portfolio.vercel.app/
+Alternative version: https://raybod179-oss.github.io/Raybod-Akbarlou-Portfolio-/
+
+### AK AI Workspace — AI Chat
+فضای کاری هوش مصنوعی با قابلیت گفتگوی هوشمند.
+Demo: https://raybod179-oss.github.io/AK-AI-Workspase-AI--Chat/
+
+### Qelvexa
+پروژه نمایشی Qelvexa با طراحی مدرن.
+Demo: https://qelvexa.vercel.app/
+Alternative version: https://raybod179-oss.github.io/Qelvexa/
+
+## Contact / official profiles
+
+- Telegram: https://t.me/Rayvoak
+- YouTube: https://www.youtube.com/@raybod-akbarlou-Rayvo
+- Bale: https://ble.ir/rayvo
+- Aparat: https://www.aparat.com/Rayvo
+- Resume: https://raybodak.vercel.app/
+- GitHub: https://github.com/raybod179
